@@ -1,41 +1,30 @@
-Berikut adalah versi **README.md** terbaru dari News App milikmu, sudah diperbarui dengan struktur, informasi, dan penjelasan yang rapi serta tetap **mudah di-edit langsung di GitHub**:
+📰 News App
+A simple and responsive News App built with React, TypeScript, and Ant Design using Clean Architecture. It fetches news articles from NewsAPI.org.
 
----
+📸 Preview
+Light & responsive UI for browsing news with detail view
+📱 Optimized for mobile, tablet, and desktop
 
-````markdown
-# 📰 News App
+🧱 Tech Stack
+⚛️ React + TypeScript
 
-A simple and responsive News App built with **React**, **TypeScript**, and **Ant Design**, following **Clean Architecture** principles. It fetches live news articles from [NewsAPI.org](https://newsapi.org).
+🧼 Clean Architecture
 
----
+💄 Ant Design
 
-## 📸 Preview
+🌐 NewsAPI
 
-> 🔍 Clean & modern UI for reading news  
-> 📱 Optimized for **mobile**, **tablet**, and **desktop**
+🧪 Jest & React Testing Library
 
----
+📦 React Scripts (npm start)
 
-## 🧱 Tech Stack
-
-- ⚛️ React + TypeScript  
-- 🧼 Clean Architecture  
-- 💄 Ant Design  
-- 🌐 NewsAPI  
-- 🔧 React Router DOM  
-- 🧪 Jest (Unit Testing)  
-- ⚡ Vite  
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the Repository
-
-```bash
+🚀 Getting Started
+1. Clone the repository
+bash
+Copy
+Edit
 git clone https://github.com/rafliadipratama/news-app.git
 cd news-app
-````
 
 ### 2. Install Dependencies
 
