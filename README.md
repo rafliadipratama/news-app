@@ -1,46 +1,124 @@
-# Getting Started with Create React App
+# 📰 News App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and responsive news app built with **React**, **TypeScript**, and **Ant Design** using data from [NewsAPI.org](https://newsapi.org/). The app displays a list of news articles and allows users to view article details.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- ✅ List & Detail View of News Articles
+- ✅ Responsive Design (Desktop, Tablet, Mobile)
+- ✅ Clean Architecture
+- ✅ Written in TypeScript
+- ✅ Styled with Ant Design
+- ✅ Tested with Jest (optional)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📦 Tech Stack
 
-### `npm test`
+- React + Vite
+- TypeScript
+- Ant Design
+- React Router
+- NewsAPI
+- Clean Architecture Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📁 Folder Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+src/
+├── application/ # Use case logic
+├── domain/ # Domain models (e.g., Article)
+├── infrastructure/ # API interaction logic
+├── presentation/ # UI layer (pages, components)
+│ └── pages/
+│ ├── ArticleList.tsx
+│ └── ArticleDetail.tsx
+├── App.tsx # Main routing
+└── main.tsx # Entry point
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+yaml
+Copy
+Edit
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠️ Installation & Running
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 1. Clone the Repository
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/rafliadipratama/news-app.git
+cd news-app
+2. Install Dependencies
+bash
+Copy
+Edit
+npm install
+# or
+yarn
+3. Add Your NewsAPI Key
+Buat file .env di root project dan tambahkan:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+env
+Copy
+Edit
+VITE_NEWS_API_KEY=your_newsapi_key_here
+Dapatkan API key dari https://newsapi.org.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+4. Run the App
+bash
+Copy
+Edit
+npm run dev
+# or
+yarn dev
+App akan berjalan di: http://localhost:5173
 
-## Learn More
+✅ Available Scripts
+npm run dev – Run development server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm run build – Build for production
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm run preview – Preview production build
+
+npm run test – Run unit tests (if added)
+
+📱 Responsive Design
+✅ Fully responsive on desktop, tablet, and mobile
+
+✅ Ant Design grid system for layout
+
+✅ Optimized images with object-fit: cover
+
+🧪 Testing (Optional)
+If you added Jest tests:
+
+bash
+Copy
+Edit
+npm run test
+📬 Feedback & Contribution
+Feel free to fork, submit issues, or open PRs for improvements. Made with ❤️ by rafliadipratama
+
+📄 License
+This project is open source and available under the MIT License.
+
+yaml
+Copy
+Edit
+
+---
+
+Kalau kamu ingin aku bantu langsung buatkan file `README.md` atau menambahkan badge GitHub (build, license, dll), beri tahu saja ya.
+
+
+
+
+
+
+
+
+Ask ChatGPT
