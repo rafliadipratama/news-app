@@ -1,5 +1,3 @@
----
-
 # 🗞️ News & Algorithm Challenge App
 
 A simple and responsive News App built with **React**, **TypeScript**, and **Ant Design**, designed with **Clean Architecture** principles. Includes algorithmic problem-solving implementations tested with **Jest**.
@@ -129,5 +127,3 @@ src/
 ## 🧑‍💻 Author
 
 Made with ❤️ by [Mohamad Rafli Adipratama](https://github.com/rafliadipratama)
-
----
