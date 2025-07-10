@@ -1,113 +1,142 @@
+Berikut adalah versi **README.md** terbaru dari News App milikmu, sudah diperbarui dengan struktur, informasi, dan penjelasan yang rapi serta tetap **mudah di-edit langsung di GitHub**:
+
+---
+
+````markdown
 # 📰 News App
 
-A simple and responsive News App built with **React**, **TypeScript**, and **Ant Design** using **Clean Architecture**. It fetches news articles from [NewsAPI.org](https://newsapi.org).
+A simple and responsive News App built with **React**, **TypeScript**, and **Ant Design**, following **Clean Architecture** principles. It fetches live news articles from [NewsAPI.org](https://newsapi.org).
 
 ---
 
 ## 📸 Preview
 
-> Light & responsive UI for browsing news with detail view
+> 🔍 Clean & modern UI for reading news  
 > 📱 Optimized for **mobile**, **tablet**, and **desktop**
 
 ---
 
 ## 🧱 Tech Stack
 
-* ⚛️ React + TypeScript
-* 🧼 Clean Architecture
-* 💄 Ant Design
-* 🌐 NewsAPI
-* 🧪 Tested with Jest
-* 📦 Vite or CRA (React Scripts)
+- ⚛️ React + TypeScript  
+- 🧼 Clean Architecture  
+- 💄 Ant Design  
+- 🌐 NewsAPI  
+- 🔧 React Router DOM  
+- 🧪 Jest (Unit Testing)  
+- ⚡ Vite  
 
 ---
 
 ## 🚀 Getting Started
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/rafliadipratama/news-app.git
 cd news-app
-```
+````
 
-### 2. Install dependencies
+### 2. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Setup API Key
+### 3. Setup NewsAPI Key
 
-1. Daftar dan dapatkan API key dari: [https://newsapi.org](https://newsapi.org)
-2. Buat file `.env` di root direktori:
+1. Daftar & dapatkan API key dari: [https://newsapi.org](https://newsapi.org)
+2. Buat file `.env` di direktori root dan tambahkan:
 
 ```env
 REACT_APP_NEWS_API_KEY=your_api_key_here
 ```
 
-> ✅ Pastikan variabel dimulai dengan `REACT_APP_` agar bisa digunakan oleh React.
+> ✅ Harus menggunakan prefix `REACT_APP_` agar dikenali oleh React.
 
-### 4. Jalankan aplikasi
+### 4. Jalankan Aplikasi
 
 ```bash
 npm start
 ```
 
-Aplikasi akan berjalan di:
-
-```
-http://localhost:3000
-```
+Lalu buka [http://localhost:3000](http://localhost:3000) di browser.
 
 ---
 
-## 📁 Folder Structure
+## 🗂️ Folder Structure
 
 ```
-news-app/
+src/
+├── algorithms/         # Logic & coding challenges
+├── application/        # Use cases (e.g. getArticles)
 ├── domain/             # Entities & interfaces
-├── application/        # Use cases
-├── infrastructure/     # API & data layer
-├── presentation/       # UI components & pages
-├── tests/              # Unit tests
-├── .env                # API Key config
-├── App.tsx             # Route setup
-└── ...
-```
-
----
-
-## 🧪 Testing
-
-Untuk menjalankan unit test (misal pada komponen):
-
-```bash
-npm test
+├── infrastructure/     # API calls (e.g. NewsAPI)
+├── presentation/
+│   ├── pages/          # ArticleList, ArticleDetail
+│   └── components/     # (Optional) reusable components
+└── App.tsx             # Main router
 ```
 
 ---
 
 ## ✅ Features
 
-* ✅ Article List with thumbnail, title & description
-* ✅ Responsive design for mobile/tablet/desktop
-* ✅ Detail view with full article content
-* ✅ Clean Architecture structure
-* ✅ Jest unit tests for logic & components
+* 📄 List of news articles with images, titles, and descriptions
+* 📱 Fully responsive layout (mobile, tablet, desktop)
+* 🔍 Article detail view with full content and image
+* 🧠 Modular architecture: Domain, Application, Infrastructure, Presentation
+* 🧪 Unit tests using **Jest**
+* 🧩 Coding algorithms included in `src/algorithms/`
 
 ---
 
-## 📦 Deployment
+## 🧪 Testing
 
-Build app for production:
+To run all tests:
+
+```bash
+npm test
+```
+
+> Test files are located in `src/tests/` and can include unit tests for logic and UI components.
+
+---
+
+## 📦 Build for Production
 
 ```bash
 npm run build
 ```
 
+The optimized build will be located in the `dist/` folder.
+
 ---
 
-## 🧑‍💻 Author
+## 🧼 .gitignore
+
+Sudah disiapkan `.gitignore` dengan pengecualian berikut:
+
+```
+node_modules/
+dist/
+.env
+coverage/
+.vscode/
+```
+
+---
+
+## 👨‍💻 Author
 
 Made with 💙 by [Mohamad Rafli Adipratama](https://github.com/rafliadipratama)
+
+---
+
+## ⭐️ Support
+
+If you like this project, feel free to give it a ⭐ on [GitHub](https://github.com/rafliadipratama/news-app)!
+
+```
+
+
