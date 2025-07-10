@@ -1,9 +1,8 @@
 export function diagonalDifference(matrix: number[][]): number {
-  const n = matrix.length;
-  let d1 = 0, d2 = 0;
-  for (let i = 0; i < n; i++) {
-    d1 += matrix[i][i];
-    d2 += matrix[i][n - i - 1];
+  let primary = 0, secondary = 0;
+  for (let i = 0; i < matrix.length; i++) {
+    primary += matrix[i][i];
+    secondary += matrix[i][matrix.length - i - 1];
   }
-  return Math.abs(d1 - d2);
+  return Math.abs(primary - secondary);
 }
