@@ -1,106 +1,108 @@
-# 📰 News App
+---
 
-A simple and responsive News App built with **React**, **TypeScript**, and **Ant Design** using **Clean Architecture**. It fetches news articles from [NewsAPI.org](https://newsapi.org).
+# 🗞️ News & Algorithm Challenge App
+
+A simple and responsive News App built with **React**, **TypeScript**, and **Ant Design**, designed with **Clean Architecture** principles. Includes algorithmic problem-solving implementations tested with **Jest**.
 
 ---
 
 ## 📸 Preview
 
-> Light & responsive UI for browsing news with detail view
-> 📱 Optimized for **mobile**, **tablet**, and **desktop**
+* Responsive news reader interface
+* Detail view for each article
+* Clean and minimal UI (mobile-friendly)
 
 ---
 
-## 🧱 Tech Stack
+## ⚙️ Tech Stack
 
 * ⚛️ React + TypeScript
-* 🧼 Clean Architecture
-* 💄 Ant Design
-* 🌐 NewsAPI
-* 🧪 Jest & React Testing Library
-* 📦 React Scripts (`npm start`)
+* 🎨 Ant Design (customized)
+* 🌐 NewsAPI integration
+* 🧼 Clean Architecture pattern
+* 🧪 Jest for unit testing
+* 📦 Create React App (CRA)
 
 ---
 
 ## 🚀 Getting Started
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/rafliadipratama/news-app.git
 cd news-app
 ```
 
-### 2. Install dependencies
+### 2. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Setup API Key
+### 3. Setup News API Key
 
-1. Daftar dan dapatkan API key dari: [https://newsapi.org](https://newsapi.org)
-2. Buat file `.env` di root direktori:
+1. Daftar dan dapatkan API key dari [NewsAPI.org](https://newsapi.org)
+2. Buat file `.env` di root project dan isi:
 
 ```env
 REACT_APP_NEWS_API_KEY=your_api_key_here
 ```
 
-> ✅ Pastikan variabel dimulai dengan `REACT_APP_` agar bisa digunakan oleh React.
+> Pastikan nama variabel diawali `REACT_APP_` agar bisa digunakan di React.
 
-### 4. Jalankan aplikasi
+### 4. Start the App
 
 ```bash
 npm start
 ```
 
-Aplikasi akan berjalan di:
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-```
-http://localhost:3000
+---
+
+## 🧠 Algorithm Challenges
+
+Berada di folder `src/algorithms/`:
+
+| File                    | Fungsi                                                             |
+| ----------------------- | ------------------------------------------------------------------ |
+| `reverseAlpha.ts`       | Membalikkan huruf dari string tanpa mengubah posisi angka          |
+| `longestWord.ts`        | Mencari kata terpanjang dari sebuah kalimat                        |
+| `countWords.ts`         | Menghitung jumlah kemunculan kata dari `QUERY` dalam `INPUT` array |
+| `diagonalDifference.ts` | Menghitung selisih diagonal utama dan sekunder dari matriks NxN    |
+
+### 🔬 Sample Usage
+
+```ts
+import { reverseAlpha } from './reverseAlpha';
+import { longestWord } from './longestWord';
+import { countWords } from './countWords';
+import { diagonalDifference } from './diagonalDifference';
+
+console.log(reverseAlpha("NEGIE1")); // "EIGEN1"
+console.log(longestWord("Saya sangat senang mengerjakan soal algoritma")); // "mengerjakan"
+console.log(countWords(['xc', 'dz', 'bbb', 'dz'], ['bbb', 'ac', 'dz'])); // [1, 0, 2]
+console.log(diagonalDifference([[1,2,0],[4,5,6],[7,8,9]])); // 3
 ```
 
 ---
 
 ## 🧪 Testing
 
-Proyek ini menggunakan **Jest** dan **React Testing Library**.
+Unit test ditulis menggunakan **Jest**. Semua algoritma sudah diuji.
 
-### Menjalankan semua test
+### Menjalankan Test:
 
 ```bash
 npm test
 ```
 
-### Contoh Unit Test: `reverseString.test.ts`
-
-```ts
-import { reverseString } from '../utils/reverseString';
-
-test('should reverse alphabet and keep number at end', () => {
-  expect(reverseString("NEGIE1")).toBe("EIGEN1");
-});
-```
-
-### Contoh Unit Test: `longestWord.test.ts`
-
-```ts
-import { longestWord } from '../utils/longestWord';
-
-test('should return the longest word from sentence', () => {
-  const sentence = "Saya sangat senang mengerjakan soal algoritma";
-  expect(longestWord(sentence)).toBe("mengerjakan");
-});
-```
-
-### Struktur folder test
+### Contoh Output:
 
 ```
-tests/
-├── reverseString.test.ts
-├── longestWord.test.ts
-├── findQueryCount.test.ts
-├── diagonalDifference.test.ts
+Test Suites: 5 passed, 5 total
+Tests:       6 passed, 6 total
 ```
 
 ---
@@ -108,40 +110,24 @@ tests/
 ## 📁 Folder Structure
 
 ```
-news-app/
-├── domain/             # Entities & interfaces
-├── application/        # Use cases
-├── infrastructure/     # API & data layer
-├── presentation/       # UI components & pages
-├── algorithms/         # Logic helper functions
-├── .env                # API Key config
-├── App.tsx             # Route setup
+src/
+├── algorithms/          # Algoritma tantangan & logika
+│   ├── reverseAlpha.ts
+│   ├── longestWord.ts
+│   ├── countWords.ts
+│   └── diagonalDifference.ts
+├── domain/              # Entities & interfaces
+├── application/         # Use cases & logic
+├── infrastructure/      # API & data services
+├── presentation/        # UI components & pages
+├── App.tsx              # Main routing file
 └── ...
-```
-
----
-
-## ✅ Features
-
-* ✅ Article List with thumbnail, title & description
-* ✅ Responsive design for mobile/tablet/desktop
-* ✅ Detail view with full article content
-* ✅ Clean Architecture structure
-* ✅ Unit tests with Jest
-* ✅ Environment variable setup
-
----
-
-## 📦 Deployment
-
-Build app for production:
-
-```bash
-npm run build
 ```
 
 ---
 
 ## 🧑‍💻 Author
 
-Made with 💙 by [Mohamad Rafli Adipratama](https://github.com/rafliadipratama)
+Made with ❤️ by [Mohamad Rafli Adipratama](https://github.com/rafliadipratama)
+
+---
